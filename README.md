@@ -10,6 +10,3 @@ A custom driver for [Laravel Valet](https://laravel.com/docs/master/valet) that 
 
 ## Installs with WordPress root files in a subdirectory
 If your install has WordPress root files in a subdirectory (such as a submodule), simply change the class property `$wp_root` from false to the root directory name.
-
-## Caveats
-This only works with the subdirectory URL scheme. If you have a subdomain site setup with Valet, this driver will probably break it. You'll need to modify the `serves()` function to prevent this driver from handling the request.
